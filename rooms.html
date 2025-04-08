@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Israilof Hotel - Номера</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rooms.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="navbarContainer">
+            <div class="nav-logo">Israilof Hotel</div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="rooms.html" class="active">Номера</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                <li class="lang-selector">
+                    <span class="current-lang">RU</span>
+                    <ul class="lang-dropdown">
+                        <li data-lang="ru" class="active">RU</li>
+                        <li data-lang="uz">UZ</li>
+                        <li data-lang="en">EN</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="overlay"></div>
+        <div class="container">
+            <h1>Номера</h1>
+            <p>Выберите идеальный номер для вашего пребывания</p>
+        </div>
+    </header>
+
+    <section class="room-filters">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label for="roomTypeFilter">Тип номера</label>
+                    <select id="roomTypeFilter">
+                        <option value="all">Все типы</option>
+                        <option value="standard">Стандартный</option>
+                        <option value="deluxe">Делюкс</option>
+                        <option value="family">Семейный</option>
+                        <option value="presidential">Президентский люкс</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="priceFilter">Цена</label>
+                    <select id="priceFilter">
+                        <option value="all">Любая цена</option>
+                        <option value="low">До 10,000₽</option>
+                        <option value="medium">10,000₽ - 20,000₽</option>
+                        <option value="high">Более 20,000₽</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="capacityFilter">Вместимость</label>
+                    <select id="capacityFilter">
+                        <option value="all">Любая</option>
+                        <option value="1-2">1-2 человека</option>
+                        <option value="3-4">3-4 человека</option>
+                        <option value="5+">5+ человек</option>
+                    </select>
+                </div>
+
+                <button id="filterReset" class="btn-secondary">Сбросить</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="rooms-grid">
+        <div class="container">
+            <div class="rooms-container">
+                <!-- Standard Rooms -->
+                <div class="room-card" data-type="standard" data-price="8000" data-capacity="2">
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Стандартный номер">
+                    </div>
+                    <div class="room-details">
+                        <h3>Стандартный номер</h3>
+                        <p class="room-price">8,000₽ за ночь</p>
+                        <p class="room-capacity">Вместимость: 2 человека</p>
+                        <p class="room-description">Уютный номер с современным дизайном и всеми необходимыми удобствами.</p>
+                        <button class="btn-primary room-details-btn">Подробнее</button>
+                    </div>
+                </div>
+
+                <div class="room-card" data-type="standard" data-price="9000" data-capacity="2">
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1631049035182-249067d7618e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Стандартный номер с видом">
+                    </div>
+                    <div class="room-details">
+                        <h3>Стандартный номер с видом</h3>
+                        <p class="room-price">9,000₽ за ночь</p>
+                        <p class="room-capacity">Вместимость: 2 человека</p>
+                        <p class="room-description">Стандартный номер с прекрасным видом на город и всеми необходимыми удобствами.</p>
+                        <button class="btn-primary room-details-btn">Подробнее</button>
+                    </div>
+                </div>
+
+                <!-- Deluxe Rooms -->
+                <div class="room-card" data-type="deluxe" data-price="12000" data-capacity="2">
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Делюкс номер">
+                    </div>
+                    <div class="room-details">
+                        <h3>Делюкс номер</h3>
+                        <p class="room-price">12,000₽ за ночь</p>
+                        <p class="room-capacity">Вместимость: 2 человека</p>
+                        <p class="room-description">Просторный номер с элегантным дизайном и дополнительными удобствами для комфортного пребывания.</p>
+                        <button class="btn-primary room-details-btn">Подробнее</button>
+                    </div>
+                </div>
+
+                <!-- Family Rooms -->
+                <div class="room-card" data-type="family" data-price="16000" data-capacity="4">
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Семейный номер">
+                    </div>
+                    <div class="room-details">
+                        <h3>Семейный номер</h3>
+                        <p class="room-price">16,000₽ за ночь</p>
+                        <p class="room-capacity">Вместимость: 4 человека</p>
+                        <p class="room-description">Просторный номер, идеально подходящий для семьи с детьми, с двумя спальнями и общей гостиной.</p>
+                        <button class="btn-primary room-details-btn">Подробнее</button>
+                    </div>
+                </div>
+
+                <!-- Presidential Suite -->
+                <div class="room-card" data-type="presidential" data-price="25000" data-capacity="2">
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Президентский люкс">
+                    </div>
+                    <div class="room-details">
+                        <h3>Президентский люкс</h3>
+                        <p class="room-price">25,000₽ за ночь</p>
+                        <p class="room-capacity">Вместимость: 2 человека</p>
+                        <p class="room-description">Эксклюзивный люкс с изысканным дизайном, отдельной гостиной, столовой и персональным обслуживанием.</p>
+                        <button class="btn-primary room-details-btn">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Room Details Modal -->
+    <div id="roomModal" class="modal">
+        <div class="modal-content room-modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="roomModalContent">
+                <!-- Content will be dynamically populated by JavaScript -->
+            </div>
+            <button id="bookNowBtn" class="btn-primary">Забронировать сейчас</button>
+        </div>
+    </div>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Забронировать номер</h2>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="roomType">Тип номера</label>
+                    <select id="roomType" required>
+                        <option value="">Выберите тип номера</option>
+                        <option value="standard">Стандартный</option>
+                        <option value="deluxe">Делюкс</option>
+                        <option value="family">Семейный</option>
+                        <option value="presidential">Президентский люкс</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="checkIn">Дата заезда</label>
+                    <input type="date" id="checkIn" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkOut">Дата выезда</label>
+                    <input type="date" id="checkOut" required>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Количество гостей</label>
+                    <select id="guests" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary">Забронировать</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Israilof Hotel</h2>
+                    <p>Роскошь и комфорт в сердце города</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="rooms.html">Номера</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Контакты</h3>
+                    <p>ул. Дзержинского 83/16</p>
+                    <p>Телефон: +374 25 6442484</p>
+                    <p>Email: Israiloff_700.ru</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Социальные сети</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">
+                            <img src="https://img.icons8.com/ios/50/000000/telegram.png" alt="Twitter">
+                        </a>
+                        <a href="" class="social-icon">
+                            <img src="https://img.icons8.com/ios/50/000000/facebook-new.png" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com/1israiloff_700/" class="social-icon">
+                            <img src="https://img.icons8.com/ios/50/000000/instagram-new.png" alt="Instagram">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Israilof Hotel. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/rooms.js"></script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Israilof Hotel - Галерея</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="navbarContainer">
+            <div class="nav-logo">Israilof Hotel</div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="rooms.html">Номера</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="gallery.html" class="active">Галерея</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                <li class="lang-selector">
+                    <span class="current-lang">RU</span>
+                    <ul class="lang-dropdown">
+                        <li data-lang="ru" class="active">RU</li>
+                        <li data-lang="uz">UZ</li>
+                        <li data-lang="en">EN</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="overlay"></div>
+        <div class="container">
+            <h1>Галерея</h1>
+            <p>Исследуйте наш отель</p>
+        </div>
+    </header>
+
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-filter">
+                <button data-filter="all" class="active">Все</button>
+                <button data-filter="rooms">Номера</button>
+                <button data-filter="restaurant">Ресторан</button>
+                <button data-filter="spa">СПА</button>
+                <button data-filter="exterior">Экстерьер</button>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Rooms -->
+                <div class="gallery-item" data-category="rooms">
+                    <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Стандартный номер">
+                    <div class="gallery-item-overlay">
+                        <h3>Стандартный номер</h3>
+                        <span>Нажмите для увеличения</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="rooms">
+                    <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Делюкс номер">
+                    <div class="gallery-item-overlay">
+                        <h3>Делюкс номер</h3>
+                        <span>Нажмите для увеличения</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="rooms">
+                    <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Семейный номер">
+                    <div class="gallery-item-overlay">
+                        <h3>Семейный номер</h3>
+                        <span>Нажмите для увеличения</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="rooms">
+                    <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Президентский люкс">
+                    <div class="gallery-item-overlay">
+                        <h3>Президентский люкс</h3>
+                        <span>Нажмите для увеличения</span>
+                    </div>
+                </div>
+
+                <!-- Restaurant -->
+                <div class="gallery-item" data-category="restaurant">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Ресторан">
+                    <div class="gallery-item-overlay">
+                        <h3>Интерьер ресторана</h3>
+                        <span>Нажмите для увеличения</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="restaurant">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Бар ресторана">
+                    <div class="gallery-item-overlay">
+                        <h3>Бар ресторана</h3>
+                        <span>Нажмите для увеличения</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="restaurant">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="Изысканная кухня">
+                    <div class="gallery-item-overlay">
+                        <h3>Изысканная кухня</h3>
+                        <span>Нажмите для увеличения</span>
+                    </div>
+                </div>
+
+                <!-- Spa -->
+                <div class="gallery-item" data-category="spa">
+                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="СПА-центр">
+                    <div class="gallery-item-overlay">
+                        <h3>СПА-центр</h3>
+                        <span>Нажмите для увеличения</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="spa">
+                    <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Массажный кабинет">
+                    <div class="gallery-item-overlay">
+                        <h3>Массажный кабинет</h3>
+                        <span>Нажмите для увеличения</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="spa">
+                    <img src="https://img.freepik.com/free-photo/indoor-swimming-pool_23-2147687650.jpg?t=st=1744138931~exp=1744142531~hmac=6c8b028bbf0fb59546d41fd92e24fab8506d009697a48d839697c3d1f0b5fb62&w=826" alt="Крытый бассейн">
+                    <div class="gallery-item-overlay">
+                        <h3>Крытый бассейн</h3>
+                        <span>Нажмите для увеличения</span>
+                    </div>
+                </div>
+
+                <!-- Exterior -->
+                <div class="gallery-item" data-category="exterior">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Экстерьер отеля">
+                    <div class="gallery-item-overlay">
+                        <h3>Экстерьер отеля</h3>
+                        <span>Нажмите для увеличения</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="exterior">
+                    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Вход в отель">
+                    <div class="gallery-item-overlay">
+                        <h3>Вход в отель</h3>
+                        <span>Нажмите для увеличения</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="exterior">
+                    <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80" alt="Сад отеля">
+                    <div class="gallery-item-overlay">
+                        <h3>Сад отеля</h3>
+                        <span>Нажмите для увеличения</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="exterior">
+                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fA%3D%3D&auto=format&fit=crop&w=1760&q=80" alt="Бассейн отеля">
+                    <div class="gallery-item-overlay">
+                        <h3>Бассейн отеля</h3>
+                        <span>Нажмите для увеличения</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="/placeholder.svg" alt="">
+            <div class="lightbox-caption">
+                <h3 id="lightbox-caption-text"></h3>
+            </div>
+        </div>
+        <button class="lightbox-btn prev">&lt;</button>
+        <button class="lightbox-btn next">&gt;</button>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Israilof Hotel</h2>
+                    <p>Роскошь и комфорт в сердце города</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="rooms.html">Номера</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Контакты</h3>
+                    <p>ул. Дзержинского 83/16</p>
+                    <p>Телефон: +374 25 6442484</p>
+                    <p>Email: Israiloff_700.ru</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Социальные сети</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">
+                            <img src="https://img.icons8.com/ios/50/000000/telegram.png" alt="Twitter">
+                        </a>
+                        <a href="" class="social-icon">
+                            <img src="https://img.icons8.com/ios/50/000000/facebook-new.png" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com/1israiloff_700/" class="social-icon">
+                            <img src="https://img.icons8.com/ios/50/000000/instagram-new.png" alt="Instagram">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Israilof Hotel. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>

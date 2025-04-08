@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Israilof Hotel - Контакты</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="navbarContainer">
+            <div class="nav-logo">Israilof Hotel</div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="rooms.html">Номера</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="contact.html" class="active">Контакты</a></li>
+                <li class="lang-selector">
+                    <span class="current-lang">RU</span>
+                    <ul class="lang-dropdown">
+                        <li data-lang="ru" class="active">RU</li>
+                        <li data-lang="uz">UZ</li>
+                        <li data-lang="en">EN</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="overlay"></div>
+        <div class="container">
+            <h1>Контакты</h1>
+            <p>Свяжитесь с нами</p>
+        </div>
+    </header>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Контактная информация</h2>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <img src="https://img.icons8.com/ios/50/000000/marker.png" alt="Адрес">
+                        </div>
+                        <div class="info-content">
+                            <h3>Адрес</h3>
+                            <p>ул. Дзержинского 83/16</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <img src="https://img.icons8.com/ios/50/000000/phone.png" alt="Телефон">
+                        </div>
+                        <div class="info-content">
+                            <h3>Телефон</h3>
+                            <p>+374 25 6442484</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <img src="https://img.icons8.com/ios/50/000000/email.png" alt="Email">
+                        </div>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p>Israiloff_700.ru</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <img src="https://img.icons8.com/ios/50/000000/clock.png" alt="Часы работы">
+                        </div>
+                        <div class="info-content">
+                            <h3>Часы работы</h3>
+                            <p>Ресепшн: 24/7</p>
+                            <p>Ресторан: 7:00-23:00</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <h3>Следите за нами</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon">
+                                <img src="https://img.icons8.com/ios/50/000000/facebook-new.png" alt="Facebook">
+                            </a>
+                            <a href="#  alt="Facebook">
+                            </a>
+                            <a href="#" class="social-icon">
+                                <img src="https://img.icons8.com/ios/50/000000/instagram-new.png" alt="Instagram">
+                            </a>
+                            <a href="#" class="social-icon">
+                                <img src="https://img.icons8.com/ios/50/000000/twitter.png" alt="Twitter">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <h2>Отправить сообщение</h2>
+                    <div id="formSuccess" class="form-success" style="display: none;">
+                        <p>Ваше сообщение успешно отправлено! Мы свяжемся с вами в ближайшее время.</p>
+                    </div>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Имя</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Тема</label>
+                            <input type="text" id="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Сообщение</label>
+                            <textarea id="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <h2 style="text-align: center;">Как нас найти</h2>
+        <div id="mapContainer">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13078.55976973506!2d63.11905982878495!3d52.970887394871596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43cd028b0c230dbd%3A0xf3d0c363267b5a6b!2s16%2C%20Ulitsa%20Dzerzhinskogo%2083%2C%20Rudny%20111500%2C%20Kazakhstan!5e0!3m2!1sen!2s!4v1744091849651!5m2!1sen!2s" width="50%" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Israilof Hotel</h2>
+                    <p>Роскошь и комфорт в сердце города</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="rooms.html">Номера</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Контакты</h3>
+                    <p>ул. Дзержинского 83/16</p>
+                    <p>Телефон: +374 25 6442484</p>
+                    <p>Email: Israiloff_700.ru</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Социальные сети</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">
+                            <img src="https://img.icons8.com/ios/50/000000/telegram.png" alt="Twitter">
+                        </a>
+                        <a href="" class="social-icon">
+                            <img src="https://img.icons8.com/ios/50/000000/facebook-new.png" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com/1israiloff_700/" class="social-icon">
+                            <img src="https://img.icons8.com/ios/50/000000/instagram-new.png" alt="Instagram">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Israilof Hotel. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

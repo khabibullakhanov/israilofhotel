@@ -1,0 +1,73 @@
+export const testimonialData = [
+  {
+    id: 1,
+    text: "Потрясающий сервис и комфортные номера. Обязательно вернусь снова!",
+    author: "Анна К.",
+    location: "Москва",
+    image: "https://randomuser.me/api/portraits/women/32.jpg",
+  },
+  {
+    id: 2,
+    text: "Лучший отель, в котором я когда-либо останавливался. Ресторан просто великолепен!",
+    author: "Дмитрий В.",
+    location: "Санкт-Петербург",
+    image: "https://randomuser.me/api/portraits/men/45.jpg",
+  },
+  {
+    id: 3,
+    text: "Идеальное место для семейного отдыха. Дети были в восторге от бассейна!",
+    author: "Елена М.",
+    location: "Казань",
+    image: "https://randomuser.me/api/portraits/women/68.jpg",
+  },
+  {
+    id: 4,
+    text: "Отличное расположение, прекрасный вид из окна и очень внимательный персонал.",
+    author: "Алексей П.",
+    location: "Екатеринбург",
+    image: "https://randomuser.me/api/portraits/men/22.jpg",
+  },
+  {
+    id: 5,
+    text: "Превосходный сервис, вкусная еда и уютные номера. Всё было идеально!",
+    author: "Ольга С.",
+    location: "Новосибирск",
+    image: "https://randomuser.me/api/portraits/women/54.jpg",
+  },
+
+ {
+    id: 6,
+    text: "Потрясающий сервис и комфортные номера. Обязательно вернусь снова!",
+    author: "Анна К.",
+    location: "Москва",
+    image: "https://randomuser.me/api/portraits/women/32.jpg",
+  },
+  {
+    id: 7,
+    text: "Лучший отель, в котором я когда-либо останавливался. Ресторан просто великолепен!",
+    author: "Дмитрий В.",
+    location: "Санкт-Петербург",
+    image: "https://randomuser.me/api/portraits/men/45.jpg",
+  },
+  {
+    id: 8,
+    text: "Идеальное место для семейного отдыха. Дети были в восторге от бассейна!",
+    author: "Елена М.",
+    location: "Казань",
+    image: "https://randomuser.me/api/portraits/women/68.jpg",
+  },
+  {
+    id: 9,
+    text: "Отличное расположение, прекрасный вид из окна и очень внимательный персонал.",
+    author: "Алексей П.",
+    location: "Екатеринбург",
+    image: "https://randomuser.me/api/portraits/men/22.jpg",
+  },
+  {
+    id: 10,
+    text: "Превосходный сервис, вкусная еда и уютные номера. Всё было идеально!",
+    author: "Ольга С.",
+    location: "Новосибирск",
+    image: "https://randomuser.me/api/portraits/women/54.jpg",
+  },
+]

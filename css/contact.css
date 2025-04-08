@@ -1,0 +1,80 @@
+/* Contact Page Specific Styles */
+.contact-section {
+  padding: 3rem 0;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.contact-info {
+  background-color: var(--secondary-color);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.info-item {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.info-icon {
+  margin-right: 1rem;
+}
+
+.info-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+.info-content h3 {
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.social-links {
+  margin-top: 2rem;
+}
+
+.social-links h3 {
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.contact-form-container {
+  background-color: var(--light-color);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.form-success {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+}
+
+#mapContainer {
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5%;
+}
+
+.map-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}
